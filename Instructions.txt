@@ -1,0 +1,38 @@
+
+1. **Prerequisites:**
+   - Ensure you have Python 3.7 or higher installed on your server.
+		If you are using windows download python from here: (https://www.python.org/downloads/
+
+2. **Setting Up Dependencies:**
+   - Open a terminal or command prompt.
+   - Navigate to the directory where you have saved the script.
+   - Run the following command to install the required Python packages:
+
+     ```
+     pip install discord.py apscheduler pytz
+     ```
+
+3. **Configuration:**
+   - Open the [CONFIG.PY] script in a text editor.
+   - Customize the following variables in the script to match your server and preferences:
+     - `TOKEN`: Replace with your Discord bot token.
+     - `leaderboard_channel_id`: Replace with the actual channel ID where you want to display the leaderboard.
+     - `leaderboardmessageID`: Replace with the actual message ID of the leaderboard message.
+     - Update the `contest_channels` and `winner_channels` dictionaries with the appropriate channel IDs for different contest types.
+     - Make sure the `themes.json` file contains themes for each contest type as needed.
+
+4. **Running the Bot:**
+   - In the terminal or command prompt, navigate to the directory containing the script.
+   - Run the script using the following command:
+
+     ```
+     python main.py
+     ```
+
+5. **Using the Bot:**
+   - Once the bot is running, it will automatically handle contest announcements, submissions, and voting.
+   - You can invite the bot to your Discord server and set up the contest channels as mentioned in the script.
+
+6. The only thing you really need to update in the code is in the config.py file. This is where you will put your discord bot token.
+If you are hosting this bot on SparkedHost, you do not need to install anything manually, they will do it for you so you only need to edit the config.
+If you need any help, contact GPhilly on discord or join my personal discord at https://discord.gg/xkdt7KAtJf
